@@ -10,4 +10,10 @@ It should run on:
 
 ```localhost:8080/```
 
+## Default Behavior
+
+By default the script will default to start on :8080, but if the argument is passed in it will start on a different port.
+
+ex:
+```start.sh 8084```
 

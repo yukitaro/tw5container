@@ -17,7 +17,8 @@ RUN tiddlywiki kennyswiki --init server
 #CMD ["/usr/local/bin/init-and-run-wiki.sh"]
 ADD ./.tw/kennyswiki/tiddlywiki.info /tiddlywiki/kennyswiki/tiddlywiki.info
 CMD tiddlywiki kennyswiki --listen host=0.0.0.0
-EXPOSE 8080
+EXPOSE $TS_PORT
+ 
 #COPY ./kennyswiki ./kennyswiki
 
 # COPY package.json package.json
